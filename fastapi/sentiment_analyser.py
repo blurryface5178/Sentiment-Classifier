@@ -99,7 +99,7 @@ def analyzer(textinput: str):
     output = int(prediction)
 
     # output dictionary
-    sentiments = {0: "Joy", 1: "Sadness",2: "Anger",3:"Fear",4:"Shame",5:"Disgust",6:"Guilt"}
+    sentiments = {0:"Anger", 1:"Disgust", 2:"Fear", 3:"Guilt", 4:"Joy", 5:"Sadness", 6:"Shame"}
 
     # show results
     

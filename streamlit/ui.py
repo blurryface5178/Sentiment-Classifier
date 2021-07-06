@@ -17,7 +17,7 @@ def process(text, server_url):
     return r
 
 # construct UI layout
-st.title("Sentiment Analysis (6 Emotions)")
+st.title("Sentiment Analysis (7 Emotions)")
 
 st.write(
     """Sentiment analysis based on the 1-P-3-ISEAR dataset.
@@ -25,7 +25,7 @@ st.write(
          Visit 'http://127.0.0.1:8000/docs' for FastAPI documentation."""
 )  # description and instructions
 
-input_text = st.text_input('How are you feeling?')
+input_text = st.text_area('How are you feeling?')
 
 if st.button("Get Emotion"):
 
