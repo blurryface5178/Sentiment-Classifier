@@ -22,3 +22,20 @@ def text_handler(text: Text):
     print(text)
     emotion = analyzer(text)
     return PlainTextResponse(emotion)
+
+# Defining path operation for root endpoint
+@app.get('/')
+def main():
+    return {'message': 'Welcome to Fusemachines!'}
+
+
+# Defining path operation for /name endpoint
+@app.get('/{name}')
+def hello_name(name: str):
+    return {'message': f'Welcome to Fusemachines!, {name}'}
+
+
+@app.get('/model/{model_name}')
+def read_model(model_name: str):
+    return {"You are viewing": model_name}
+

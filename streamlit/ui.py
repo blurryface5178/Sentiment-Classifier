@@ -31,7 +31,10 @@ if st.button("Get Emotion"):
 
     if input_text:
         sentiment = process(input_text, backend)
-        st.write(sentiment.content.decode())
+        st.write("Emotion detected:", sentiment.content.decode())
+
+        if(sentiment.content.decode()=='Joy'):
+            st.balloons()
 
     else:
         # handle case with no image
