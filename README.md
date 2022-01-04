@@ -1,8 +1,6 @@
 # Sentiment Classifier
 
-A sentiment classification app using streamlit, fastapi and docker.
-
-Sentiment classification based on the 1-P-3-ISEAR dataset. The front end is handled by streamlit and the backend with a FastAPI service.
+Sentiment classification webapp based on the 1-P-3-ISEAR dataset. The front end is handled by streamlit and the backend with a FastAPI service.
 
 ## Instructions for Use:
 
