@@ -1,32 +1,47 @@
-# Simple NLP Application
+# Sentiment Classifier
 
-#### ...using streamlit, fastapi and docker
+A sentiment classification app using streamlit, fastapi and docker.
 
----
+Sentiment classification based on the 1-P-3-ISEAR dataset. The front end is handled by streamlit and the backend with a FastAPI service.
 
-## How To Use:
+## Instructions for Use:
 
 1.  Install docker engine. (https://docs.docker.com/engine/install/).
 
 For Ubuntu or similar systems, open terminal and run:
 
-        sudo apt-get update
-        sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
 
 For arch linux, open terminal and run:
 
-        sudo pacman -Syu docker
+```
+sudo pacman -Syu docker
+```
 
 2.  You need a docker service running in the background. Run command:
 
-        sudo dockerd
+```
+sudo dockerd
+```
 
 3.  To build the application, go to the folder containing `docker-compose.yml` and run command:
 
-        docker-compose build
+```
+docker-compose build
+```
 
 4.  To run the application, run command:
 
-        docker-compose up
+```
+docker-compose up
+```
 
 5.  Click on the "Network URL". You will be redirected to a web browser where the model is running.
+
+# Screenshots
+
+![joy](screenshots/joy.png)
+![sad](screenshots/sadness.png)

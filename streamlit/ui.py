@@ -8,7 +8,6 @@ import streamlit as st
 # interact with FastAPI endpoint
 backend = "http://fastapi:8000/sentiment"
 
-
 def process(text, server_url):
 
     r = requests.post(
@@ -17,10 +16,10 @@ def process(text, server_url):
     return r
 
 # construct UI layout
-st.title("Sentiment Analysis (7 Emotions)")
+st.title("Sentiment Classifier (7 Emotions)")
 
 st.write(
-    """Sentiment analysis based on the 1-P-3-ISEAR dataset.
+    """Sentiment classification based on the 1-P-3-ISEAR dataset.
          The front end is handled by streamlit and the backend with a FastAPI service.
          Visit 'http://127.0.0.1:8000/docs' for FastAPI documentation."""
 )  # description and instructions
